@@ -1,0 +1,139 @@
+/* Elimina márgenes y rellenos predeterminados, y configura box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Configuración general del body */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    background-color: rgb(240, 162, 216); /* Fondo blanco */
+    justify-content: center; /* Sin efecto directo en body */
+}
+
+/* Estiliza el encabezado */
+header {
+    text-align: center; /* Centra el texto */
+    background-color: #c5056f; /* Fondo oscuro */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+header nav a:hover {
+    color: #fa50de; /* Rojo brillante */
+}
+
+/* Ajusta imágenes de navegación para que no excedan su contenedor */
+img {
+   height: 200px;
+   width: 200px; /* Escala las imágenes proporcionalmente */
+}
+
+h1{
+    color: rgb(255, 192, 227);
+}
+
+/* Estiliza las listas de navegación */
+ul {
+    display: flex; /* Diseño flexible */
+    flex-direction: row; /* Elementos en fila */
+    justify-content: center; /* Centra los elementos */
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+/* Estiliza cada elemento de la lista */
+li {
+    list-style: none; /* Elimina viñetas */
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none; /* Sin subrayado */
+    color: rgb(253, 194, 227); /* Color blanco azulado */
+}
+
+/* Configura la sección main */
+main {
+    display: grid; /* Diseño de cuadrícula */
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+    gap: 20px; /* Espaciado entre elementos */
+    padding: 50px; /* Relleno interno */
+    justify-items: center; /* Centra elementos en cada celda */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #5f0034; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 8px 15px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para productos */
+#boxproducto {
+    width: 250px; /* Ancho fijo */
+    background-color: #ee8dd6; /* Fondo oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #5e1d48; /* Borde oscuro */
+    padding: 15px; /* Relleno interno */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px #5e1d48; /* Sombra sutil */
+    justify-content: center; /* Centra el contenido */
+}
+
+/* Configuración del pie de página */
+footer {
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Relleno interno */
+    background-color: #c5056f; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+}
+
+/* Estiliza los botones del contador */
+.botonescontador {
+    display: flex; /* Diseño flexible */
+    flex-direction: row; /* Elementos en fila */
+    justify-content: center; /* Centra los elementos */
+}
+
+/* Configuración del ícono del carrito */
+#icono-carrito {
+    position: relative; /* Posicionamiento relativo */
+    display: inline-block; /* Bloque en línea */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+/* Tamaño del ícono del carrito */
+#icono-carrito img {
+    width: 50px; /* Ancho de 50px */
+    height: 50px; /* Alto de 50px */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Oculta los enlaces de navegación */
+    .nav-links {
+        display: none; /* No visible por defecto */
+        flex-direction: column; /* Cambia a columna */
+        position: absolute; /* Posición fija */
+        top: 60px; /* Espaciado desde arriba */
+        right: 0; /* Pegado a la derecha */
+        background-color: #6f4f28; /* Fondo marrón */
+        width: 100%; /* Ocupa todo el ancho */
+        text-align: right; /* Texto alineado a la derecha */
+        padding: 20px; /* Relleno interno */
+    }
+
+    /* Hace visibles los enlaces cuando están activos */
+    .nav-links.active {
+        display: flex; /* Muestra los enlaces */
+    }
+
+    /* Muestra el ícono del menú */
+    .menu-icon {
+        display: block; /* Visible */
+    }
+}

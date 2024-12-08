@@ -1,0 +1,79 @@
+* {
+    margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye los bordes y el padding dentro del ancho y alto del elemento */
+}
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    background-color: rgb(240, 162, 216);
+    justify-content: center; /* Sin efecto directo en body */
+}
+
+header {
+    text-align: center; /* Centra el texto */
+    background-color: #c5056f; /* Fondo oscuro */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+header nav a:hover {
+    color: #fa50de; /* Rojo brillante */
+}
+
+ul {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: row; /* Organiza los elementos en fila */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del `ul` */
+    padding: 10px 0; /* Espaciado vertical dentro del `ul` */
+}
+
+li {
+    list-style: none; /* Elimina los estilos de lista (viñetas o números) */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: rgb(253, 194, 227); /* Establece el color de los enlaces */
+}
+
+main {
+    display: flex; /* Usa flexbox para organizar los elementos secundarios */
+    gap: 20px; /* Añade espacio entre los elementos secundarios */
+    padding: 50px; /* Espaciado interno alrededor del contenido principal */
+    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+    align-items: center; /* Centra verticalmente los elementos secundarios */
+}
+
+button {
+    background-color: #5f0034; /* Fondo oscuro */
+    color: white; /* Establece el color del texto del botón */
+    padding: 8px 15px; /* Espaciado interno del botón */
+    border: none; /* Elimina bordes predeterminados */
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+#formularioinicio {
+    background-color: #cf49bd; /* Fondo rojo oscuro para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(131, 5, 78, 0.1); /* Sombra alrededor del formulario */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ancho completo disponible */
+    max-width: 500px; /* Ancho máximo del formulario */
+    display: flex; /* Usa flexbox para organizar el contenido interno */
+    text-align: center; /* Centra el texto horizontalmente */
+    flex-direction: column; /* Organiza el contenido en columna */
+}
+
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #c5056f; /* Fondo rojo oscuro */
+    color: white; /* Texto blanco */
+}
+
+.botonescontador {
+    display: flex; /* Usa flexbox para organizar los botones */
+    flex-direction: row; /* Ordena los botones en fila */
+    justify-content: center; /* Centra horizontalmente los botones */
+}
